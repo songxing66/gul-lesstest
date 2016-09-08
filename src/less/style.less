@@ -1,0 +1,53 @@
+@bfont-size:14px;
+@bg-color:#f0f0f0;
+@link-color:#00a8e9;
+@bwidth:1px;
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+.fodeborder(@radius:5px,@bcolor:#000){
+         border-radius: @radius;
+         border-style: solid;
+        border-width: @bwidth;
+        border-color: @bcolor
+}
+.style1{
+    .box;
+  .fodeborder;
+
+}
+.style2{
+    .box;
+  .fodeborder(20px,#f00);
+
+}
+.style3{
+    .box;
+    .fodeborder(10px,#f99);
+    border-width: @bwidth*5;
+    a{
+        color: @link-color
+    }
+
+}
+.style4{
+    .box;
+    .fodeborder(10px,#000);
+    border-width: @bwidth*5;
+
+}
+.style5{
+    .box;
+    .fodeborder(10px,#000);
+    border-width: @bwidth*5;
+
+}
+
+.style6{
+    .box;
+    .fodeborder(30px,#000);
+    border-width: @bwidth*10;
+
+}
